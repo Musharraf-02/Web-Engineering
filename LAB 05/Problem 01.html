@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="mydiv1" style="border:5px solid black;height:200px;width: 200px;background-color: pink;"></div>
+    <br>
+    <div id="mydiv2" style="border:5px solid black;height:200px;width: 200px;background-color: orange;"></div>
+    <br>
+    <div id="mydiv3" style="border:5px solid black;height:200px;width: 200px;background-color: palegreen;"></div>
+    <br>
+    <div id="mydiv4" style="border:5px solid black;height:200px;width: 200px;background-color: paleturquoise;"></div>
+    <script>
+        const div1 = document.getElementById("mydiv1");
+        div1.addEventListener("click", function () {
+            if (div1.style.backgroundColor == "pink") {
+                div1.style.backgroundColor = "red";
+            }
+            else {
+                div1.style.backgroundColor = "pink"
+            }
+        });
+        const div2 = document.getElementById("mydiv2");
+        div2.addEventListener("click", function () {
+            if (div2.style.backgroundColor == "orange") {
+                div2.style.backgroundColor = "yellow";
+            }
+            else {
+                div2.style.backgroundColor = "orange"
+            }
+        });
+        const div3 = document.getElementById("mydiv3");
+        div3.addEventListener("click", function () {
+            if (div3.style.backgroundColor == "palegreen") {
+                div3.style.backgroundColor = "green";
+            }
+            else {
+                div3.style.backgroundColor = "palegreen"
+            }
+        });
+        const div4 = document.getElementById("mydiv4");
+        div4.addEventListener("click", function () {
+            if (div4.style.backgroundColor == "paleturquoise") {
+                div4.style.backgroundColor = "blue";
+            }
+            else {
+                div4.style.backgroundColor = "paleturquoise"
+            }
+        });
+    </script>
+</body>
+
+</html>

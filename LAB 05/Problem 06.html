@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="mydiv">
+        <p>Click the button to make a BUTTON element with text.</p>
+        <button id="mybtn">Create Button</button>
+    </div>
+    <script>
+        const btn = document.getElementById("mybtn");
+        btn.addEventListener("click", function () {
+            const newbtn = document.createElement("button");
+            const div = document.getElementById("mydiv");
+            newbtn.appendChild(document.createTextNode("BUTTON"));
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+            div.appendChild(newbtn);
+        });
+    </script>
+
+</body>
+
+</html>

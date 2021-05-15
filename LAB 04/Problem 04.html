@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <Label >1st Number:</Label>
+                </td>
+                <td>
+                    <input id="number1" type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label>2nd Number:</Label>
+                </td>
+                <td>
+                    <input id="number2" type="number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onClick="calculateProduct()" Value="Multiply">
+                </td>
+                <td>
+                    <input type="button" onClick="calculateDivision()" Value="Divide">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p>The Result is:<p>
+     <span id="result"></span>
+    <script>
+        function calculateProduct(){
+            num1=document.getElementById("number1").value;
+            num2=document.getElementById("number2").value;
+            document.getElementById("result").innerHTML = num1 * num2;
+        }
+        function calculateDivision(){
+            num1=document.getElementById("number1").value;
+            num2=document.getElementById("number2").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+        }
+    </script>
+</body>
+
+</html>

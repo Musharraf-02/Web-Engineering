@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div>
+        <ul id="mylist">
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <p>Click the button to append an item to the end of list.</p>
+        <button id="mybtn">Try it</button>
+    </div>
+    <script>
+        const btn = document.getElementById("mybtn");
+        btn.addEventListener("click", function () {
+            const list = document.getElementById("mylist");
+            const item = document.createElement("li");
+            item.appendChild(document.createTextNode("Water"));
+            list.appendChild(item);
+        });
+    </script>
+</body>
+
+</html>

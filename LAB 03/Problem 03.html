@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .mycol .form-control::-webkit-input-placeholder {
+            color: black;
+        }
+
+        .mycol2 .form-control::-webkit-input-placeholder {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: rgb(0, 195, 255);padding:50px ;height: 100%;">
+        <div class="row"
+            style="height: auto;border-left:15px solid white;border-right: 15px solid rgb(71, 54, 231);border-radius: 15px;">
+            <div class="col-6 mycol"
+                style="background-color: white;padding: 50px;color: rgb(48, 100, 197);height: auto;">
+                <h3>General Information</h3>
+                <br><br>
+                <div class="row">
+                    <div class="col-12">
+                        <select class="form-control" id="title" style="border: none; border-bottom: 1px solid;">
+                            <option selected>Title</option>
+                            <option value="1">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <form>
+                    <div class="row justify-content-between">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name"
+                                style="border: none;border-bottom: 1px solid;-webkit-input-placeholder:black;">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name"
+                                style="border: none;border-bottom: 1px solid;">
+                        </div>
+
+                    </div>
+                </form>
+                <br><br>
+                <div class="row">
+                    <div class="col-12">
+                        <select class="form-control" id="position" style="border: none;border-bottom: 1px solid;">
+                            <option selected>Position</option>
+                            <option value="1">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="comppany" placeholder="Company"
+                                style="border: none;border-bottom: 1px solid;">
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <div class="row justify-content-between">
+                    <div class="col-7">
+                        <form>
+                            <input type="text" class="form-control" id="businessarean" placeholder="Business Arean"
+                                style="border: none;border-bottom: 1px solid;">
+                        </form>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-control" id="employess" style="border: none;border-bottom: 1px solid;">
+                            <option selected>Employess</option>
+                            <option value="1">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 mycol2"
+                style="background-color: rgb(71, 54, 231);color: white;padding: 50px;height: auto;">
+                <h3>Contact Details</h3>
+                <br><br>
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="streetnr" placeholder="Street + Nr"
+                                style="border: none;border-bottom: 1px solid;background-color:  rgb(71, 54, 231);color: white">
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="additionlainformation"
+                                placeholder="Additional Information"
+                                style="border: none;border-bottom: 1px solid white;background-color:  rgb(71, 54, 231);color: white;">
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <form>
+                            <input type="number" class="form-control" id="zipcode" placeholder="Zip Code"
+                                style="border: none;border-bottom: 1px solid white;background-color:  rgb(71, 54, 231);color: white;">
+                        </form>
+                    </div>
+                    <div class="col-9">
+                        <select class="form-control" id="palce"
+                            style="border: none;border-bottom: 1px solid white;background-color:  rgb(71, 54, 231);color: white;">
+                            <option selected>Place</option>
+                            <option value="1">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                        </select>
+
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-12">
+                        <select class="form-control" id="country"
+                            style="border: none;border-bottom: 1px solid white;background-color:  rgb(71, 54, 231);color: white;">
+                            <option selected>Country</option>
+                            <option value="1">Option1</option>
+                            <option value="2">Option2</option>
+                            <option value="3">Option3</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <form>
+                    <div class="row justify-content-between">
+                        <div class="col-3">
+                            <input type="number" class="form-control" id="code" placeholder="Code +"
+                                style="border: none;border-bottom: 1px solid white;background-color: rgb(71, 54, 231);color: white;">
+                        </div>
+                        <div class="col-9">
+                            <input type="number" class="form-control" id="phonenumber" placeholder="Phone Number"
+                                style="border: none;border-bottom: 1px solid white;background-color: rgb(71, 54, 231);color: white;">
+                        </div>
+
+                    </div>
+                </form>
+                <br><br>
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="email" class="form-control" id="youremail" placeholder="Your Email"
+                                style="border: none;border-bottom: 1px solid white;background-color:  rgb(71, 54, 231);color: white;">
+                        </div>
+                    </div>
+                </form>
+                <br><br>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="exampleRadios1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                I do accept the <b><u>Terms and
+                                        Conditions</u></b><br> of your site.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-4">
+                        <form>
+                        <button type="submit" class="btn-lg" style="border-radius: 25px;;padding: 15px;"><b>Register
+                                Badge</b>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

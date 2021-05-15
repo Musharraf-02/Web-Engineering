@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="mydiv1">
+        <form>
+            <label>First Name:</label>
+            <input type="text" id="firstName">
+            <br>
+            <label>Last Name:</label>
+            <input type="text" id="lastName">
+            <br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <p>Click the "Get Values" button to return the values of each element in the form.</p>
+        <div id="mydiv2">
+
+        </div>
+        <button id="valuesBtn">Get Values</button>
+    </div>
+    <script>
+        const btn = document.getElementById("valuesBtn");
+        btn.addEventListener("click", function () {
+            const div2 = document.getElementById("mydiv2");
+            div2.appendChild(document.createTextNode(document.getElementById("firstName").value));
+            div2.appendChild(document.createElement("br"));
+            div2.appendChild(document.createTextNode(document.getElementById("lastName").value));
+            div2.appendChild(document.createElement("br"));
+            div2.appendChild(document.createTextNode(document.getElementById("submit").value));
+            div2.appendChild(document.createElement("br"));
+            div2.appendChild(document.createElement("br"));
+        });
+    </script>
+
+</body>
+
+</html>

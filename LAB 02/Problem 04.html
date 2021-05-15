@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Name<span>*</span></label></td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Zip Code<span>*</span></label></td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td><label>Country<span>*</span></label></td>
+                <td>
+                    <select required>
+                        <option value="">Please select...</option>
+                        <option>Country1</option>
+                        <option>Country2</option>
+                        <option>Country3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender<span>*</span></label></td>
+                <td><input type="radio" name="gender" required>
+                    <label>Male</label>
+                    <input type="radio" name="gender" required>
+                    <label>Female</label></td>
+            </tr>
+            <tr>
+                <td>Preferences<span>*</span></td>
+                <td><input type="checkbox" required>
+                    <label>Red</label>
+                    <input type="checkbox">
+                    <label>Green</label>
+                    <input type="checkbox">
+                    <label>Blue</label></td>
+            </tr>
+            <tr>
+                <td><label>Phone<span>*</span></label></td>
+                <td><input type="tel" required></td>
+            </tr>
+            <tr>
+                <td><label>Email<span>*</span></label></td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td><label>Password (6-8 characters)<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td><label>Verify Password<span>*</span></label></td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit">
+                    <input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

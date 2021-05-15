@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div>
+        <button id="mybtn">Button clicked <span id="myspan">0</span> times</button>
+    </div>
+    <script>
+        const btn = document.getElementById("mybtn");
+        btn.addEventListener("click", function () {
+            document.getElementById("myspan").innerText = parseInt(document.getElementById("myspan").innerText) + 1;
+        });
+    </script>
+</body>
+
+</html>
